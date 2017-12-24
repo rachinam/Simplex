@@ -4,7 +4,7 @@ package r.o;
 public class Simplex<T> {
     private int cont,var;
     private T c1,c2,c3,c4,c5;
-    private T a1,a2,a3,a4,a5,a6,a7,a8;
+    private T a1,a2,a3,a4,a5,a6,a7,a8,a9,a10;
     
     public Simplex(){
         this.cont = 2;
@@ -37,6 +37,10 @@ public class Simplex<T> {
                 }else{
                     if((this.a8 == null)&&(this.a8 == null)){
                         this.a7 =a1;this.a8 = a2;
+                    }else{
+                        if((this.a9 == null)&&(this.a10 == null)){
+                            this.a9 =a1;this.a10 = a2;
+                        }
                     }
                 }
             }
